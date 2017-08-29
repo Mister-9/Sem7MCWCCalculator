@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="18dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mr9.calculator.MainActivity">
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_plus"
+        android:height="@android:dimen/notification_large_icon_width"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="22sp" />
+
+    <Button
+        android:text="="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_equal"
+        android:height="@android:dimen/notification_large_icon_width"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button_plus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="22sp" />
+
+    <Button
+        android:text="."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_dot"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="22sp"
+        android:height="@android:dimen/notification_large_icon_width"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_zero"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/button_dot"
+        android:textSize="22sp" />
+
+    <Button
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_one"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textSize="22sp"
+        android:height="@android:dimen/notification_large_icon_width"
+        android:layout_above="@id/button_dot"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_two"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_above="@+id/button_zero"
+        android:layout_toEndOf="@+id/button_one"
+        android:textSize="22sp" />
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_minus"
+        android:height="@android:dimen/notification_large_icon_width"
+        android:layout_above="@+id/button_plus"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="22sp" />
+
+    <Button
+        android:text="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_three"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_above="@+id/button_equal"
+        android:layout_toStartOf="@id/button_minus"
+        android:textSize="22sp" />
+
+    <Button
+        android:text="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_four"
+        android:textSize="22sp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:height="@android:dimen/notification_large_icon_width"
+        android:layout_above="@id/button_one"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/button_five"
+        android:textSize="22sp"
+        android:layout_above="@id/button_two"
+        android:layout_toEndOf="@id/button_four"  />
+
+    <Button
+        android:text="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_six"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textSize="22sp"
+        android:layout_above="@+id/button_three"
+        android:layout_toStartOf="@+id/button_multiply" />
+
+    <Button
+        android:text="*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_multiply"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="22sp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/button_minus" />
+
+    <Button
+        android:text="7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_seven"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:height="@android:dimen/notification_large_icon_width"
+        android:textSize="22sp"
+        android:layout_above="@id/button_four"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:text="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_eight"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textSize="22sp"
+        android:layout_above="@id/button_five"
+        android:layout_toEndOf="@id/button_seven"/>
+
+    <Button
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_devide"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="22sp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/button_multiply" />
+
+    <Button
+        android:text="9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_nine"
+        android:height="@android:dimen/notification_large_icon_width"
+        android:layout_above="@+id/button_six"
+        android:layout_toStartOf="@id/button_devide"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textSize="22sp" />
+
+    <Button
+        android:text="!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_factorial"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="22sp"
+        android:layout_alignBaseline="@+id/button_power"
+        android:layout_alignBottom="@+id/button_power"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:text="^"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_power"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="22sp"
+        android:layout_above="@+id/button_seven"
+        android:layout_toEndOf="@id/button_factorial"/>
+
+
+    <Button
+        android:text="Erase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_erase"
+        android:height="@android:dimen/notification_large_icon_width"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_above="@+id/button_devide"
+        android:layout_toEndOf="@id/button_power"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/output"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        tools:background="?android:attr/colorLongPressedHighlight"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/button_erase"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_string"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/output"
+        android:textAlignment="viewEnd" />
+</RelativeLayout>
